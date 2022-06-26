@@ -1,9 +1,0 @@
-@import url("./master.css");
-
-.sub-nav { background: var(--color-lgt-blue); height: 6.6vh; width: 80rem; animation: navbarload 2s ease-in-out; }
-
-.brandname { color: var(--color-purple); font-weight: 300 !important; }
-
-.brandname:hover { color: var(--color-dgr-blue); }
-
-.brandlogo { height: 5.5vh; width: 5.5vh; margin-left: 2vh; margin-top: 0.5vh; border-radius: 4.8vh; }
