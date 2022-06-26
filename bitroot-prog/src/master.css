@@ -1,0 +1,30 @@
+:root
+{
+  --font-lato: "Lato";
+  --color-lgt-blue: lightblue;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-dgr-blue: dodgerblue;
+  --lgt-dgr-blue: rgb(117, 186, 255);
+  --color-purple: purple;
+  --color-drk-blue: rgb(89, 0, 255);
+}
+
+@keyframes navbarload {
+  from { opacity: 0; margin-top: -10vh; }
+  to { opacity: 1; }
+}
+
+@keyframes naviconload {
+  from { opacity: 0; margin-top: -20vh; }
+  to { opacity: 1; }
+}
+
+@keyframes compload {
+  from { opacity: 0; transform: zoom(1); }
+}
+
+@keyframes compload1 {
+  from { opacity: 0; margin-top: -5vh; }
+  to { opacity: 1; margin-top: 0vh; }
+}
