@@ -1,0 +1,19 @@
+@import url("../master.css");
+
+.navbar { margin-left: 136vh; margin-right: 20vh; margin-top: -7.2vh; }
+
+.navbar i { color: var(--color-purple); }
+
+.navbar i:hover { color: var(--color-dgr-blue); margin-top: -1.2vh; transition: 0.4s ease-in-out; }
+
+.navHome { animation: naviconload 2.2s ease-in-out; }
+
+.navAbout { animation: naviconload 2.8s ease-in-out; }
+
+.navService { animation: naviconload 3.6s ease-in-out; }
+
+.navBlog { animation: naviconload 4.2s ease-in-out; }
+
+.navContact { animation: naviconload 4.6s ease-in-out; }
+
+.active { color: var(--color-drk-blue) !important; }
