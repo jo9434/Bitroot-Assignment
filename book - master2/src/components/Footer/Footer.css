@@ -1,0 +1,131 @@
+:root {
+    --color-aquamarine: aquamarine;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-dark-orange: darkorange;
+    --color-dgr-blue: dodgerblue;
+    --color-lgt-grey: rgb(198, 195, 195);
+    --color-fb: #5580dc;
+    --color-insta: #e646a0;
+    --color-twtr: #00acee;
+    --color-mail: #7300ff;
+    --color-navy-blue: rgb(14, 14, 202);
+    --color-lgt-maroon: rgb(247, 156, 156);
+}
+
+.footer{
+    background-color: var(--color-aquamarine);
+    position: relative;
+    margin-top :20px;
+    margin-bottom:-60px;
+    text-align: center !important;
+}
+
+.branddiv { padding-top: -2vh; }
+
+.branddiv, .subdiv { text-align: center; align-items: center; }
+
+.subdiv { padding-bottom: 2vh; }
+
+.link { text-transform: uppercase; text-decoration: none; color: var(--color-black); }
+
+.link:hover
+{
+    cursor: pointer;
+    color: var(--color-dgr-blue);
+    text-decoration: underline;
+    text-decoration-color: var(--color-dark-orange);
+    text-underline-offset: 0.2vh;
+}
+
+#fb, #insta, #twtr, #mail
+{
+    float: left;
+    height: 6.4vh;
+    width: 6.4vh;
+    padding-top: 0.2vh;
+    padding-left: 2vh;
+    animation: iconloadtransition 2s ease-in-out;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+#fb:hover, #insta:hover, #twtr:hover, #mail:hover
+{
+    cursor: pointer;
+    margin-top: 1.4vh;
+    transition: 0.6s ease-in-out;
+    text-decoration: underline;
+    text-underline-offset: 0.4vh;
+}
+
+#fb:hover { color: var(--color-fb); }
+
+#insta:hover { color: var(--color-insta); }
+
+#twtr:hover { color: var(--color-twtr); }
+
+#mail:hover { color: var(--color-mail); }
+
+.footerlinks { margin-left: 30vh; margin-top: -4.2vh; text-transform: capitalize; }
+
+.list1, .list2 { letter-spacing: 0.3vh; }
+
+.list1 a, .list2 a  { text-decoration: none; }
+
+.sublist1, .sublist2, .sublist3, .sublist4, .sublist5, .sublist6, .sublist7 { font-size: 2vh; }
+
+.sublist1 { margin-right: 150.6vh; }
+
+.sublist2 { margin-top: 2vh;  margin-right: 156vh; }
+
+.sublist3 { margin-top: 2vh;  margin-right: 150.9vh; }
+
+.sublist4 { margin-top: 2vh;  margin-right: 150.4vh; }
+
+.sublist5 { margin-right: 90vh; }
+
+.sublist6 { margin-top: 2vh;  margin-right: 88vh; }
+
+.sublist7 { margin-top: 2vh;  margin-right: 82vh; }
+
+.sublist1 a:hover, .sublist2 a:hover, .sublist3 a:hover, .sublist4 a:hover,
+.sublist5 a:hover, .sublist6 a:hover, .sublist7 a:hover
+{
+    text-decoration:underline;
+    text-decoration-color: var(--color-dark-orange);
+    text-decoration-thickness: 0.4vh;
+    text-underline-offset: 0.4vh;
+    cursor: pointer;
+    margin-left: 4vh;
+    transition: 0.4s ease-in-out;
+}
+
+.btnSend { margin-left: 45vh; margin-top: -40vh; }
+
+.btnSearch { margin-left: 135vh; margin-top: -48vh; }
+
+.send-bar, .search-bar
+{
+    height: 4vh;
+    width: 30vh;
+    border-top: 0vh;
+    border-left: 0vh;
+    border-right: 0vh;
+    background: transparent;
+    border-color: var(--color-white);
+}
+
+.send-bar:focus, .search-bar:focus { width: 40vh; transition: 0.6s ease-in-out; }
+
+.iconSend { color: var(--color-dark-orange); float: right; margin-top: 0.8vh; margin-left: 2vh; }
+
+.iconSearch { color: var(--color-dgr-blue); float: right; margin-top: 0.8vh; margin-left: 2vh; }
+
+.iconSend:active { color: var(--color-lgt-maroon); }
+
+.iconSearch:active { color: var(--color-navy-blue); }
+
+::placeholder { color: var(--color-white); opacity: 1; }
+
+:-moz-placeholder, ::-moz-placeholder { color: var(--color-white); }
