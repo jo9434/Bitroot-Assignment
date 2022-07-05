@@ -1,0 +1,67 @@
+@import url("../../master.css");
+
+.loginpage { animation: compload 3.2s ease-in-out; border: 0.4vh solid var(--color-black); }
+
+.heading { margin-top: -3.2vh !important; margin-bottom: -0.8vh !important; color: var(--color-black); }
+
+/* Uncomment this line and remove text if brand name has to be there in
+the login page heading
+.heading u { text-underline-offset: 0.4vh; }*/
+
+.col-bar { border: 0.3vh solid var(--color-black); background: var(--color-black); }
+
+.btnclose
+{
+    margin-left: 52.5vh;
+    margin-top: 2.4vh;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-black);
+}
+
+.btnclose:active { color: var(--color-black); }
+
+.btnclose:hover { border: 0.4vh solid var(--color-black);; border-radius: 2.8vh; }
+
+.txtbox
+{
+    width: 40vh;
+    background-color: var(--color-white);
+    border-color: var(--color-black) !important;
+    border-left: 0vh;
+    border-right: 0vh;
+    border-top: 0vh;
+    padding-left: 1.4vh;
+    margin-left: -1.4vh;
+    transition: 0.2s ease-in-out;
+    outline: none;
+    color: var(--color-black);
+}
+
+.txtbox:focus
+{
+    border: 0.4vh solid;
+    border-radius: 1.6vh;
+    outline: none !important;
+}
+
+.bttn { text-transform: uppercase; margin-top: 2.8vh !important; }
+
+.bttn:hover { background: var(--color-white); color: var(--color-black); }
+
+.rdrFgtPwd
+{
+    display: block;
+    position: relative;
+    text-transform: capitalize;
+    margin-top: 2vh !important;
+    text-align: center;
+    color: var(--color-black);
+}
+
+.rdrFgtPwd:hover { color: var(--color-black); }
+
+::placeholder { color: var(--color-black); }
+
+:-moz-placeholder, ::-moz-placeholder { color: var(--color-black); }

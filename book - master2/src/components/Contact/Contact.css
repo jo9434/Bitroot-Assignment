@@ -1,0 +1,51 @@
+@import url('../../master.css');
+
+.cnctpage { animation: compload 3.2s ease-in-out; border: 0.4vh solid var(--color-black); }
+
+.heading { margin-top: -2vh; margin-bottom: -0.8vh; color: var(--color-black); }
+
+/* Uncomment this line and remove text if brand name has to be there in
+the register page heading
+.heading u { text-underline-offset: 0.4vh; }*/
+
+.btnclose
+{
+    margin-left: 52.5vh;
+    margin-top: 2.4vh;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-black);
+}
+
+.btnclose:active { color: var(--color-black); }
+
+.btnclose:hover { border: 0.4vh solid var(--color-black); border-radius: 2.8vh; }
+
+.txtbox, .txtboxarea
+{
+    width: 40vh;
+    background-color: var(--color-white);
+    border-color: var(--color-black) !important;
+    border-left: 0vh;
+    border-right: 0vh;
+    border-top: 0vh;
+    padding-left: 1.4vh;
+    margin-left: -1.4vh;
+    transition: 0.2s ease-in-out;
+    outline: none;
+}
+
+.txtboxarea { resize: none; }
+
+.txtbox:focus, .txtboxarea:focus { border: 0.4vh solid; border-radius: 1.6vh; outline: none !important; }
+
+.col-bar { margin-left: -0.1vh; border: 0.3vh solid var(--color-black); background: var(--color-black); }
+
+.bttn { text-transform: uppercase; margin-top: 1.25vh; }
+
+.bttn:hover { background: var(--color-white); color: var(--color-black); transition: 0.4s ease-in-out; }
+
+::placeholder { color: var(--color-black); }
+
+:-moz-placeholder, ::-moz-placeholder { color: var(--color-black); }

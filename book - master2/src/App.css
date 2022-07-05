@@ -1,0 +1,33 @@
+:root
+{
+  /* CSS Common Initializtions Goes Here */
+  --font-dosis: "Dosis";
+  --font-rajdhani: "Rajdhani";
+  --color-black: rgb(75, 72, 72);
+  --color-white: #fff;
+  --color-dgr-blue: dodgerblue;
+  --color-lgt-blue: lightblue;
+  --color-prpl: #833AB4;
+}
+
+/* CSS Common Styling Goes Here */
+.appname
+{
+    font-family: var(--font-rajdhani);
+    margin-left: 4vh;
+    padding-top: 1.2vh;
+    color: var(--color-white);
+}
+
+.navbar-comp { background-color: var(--color-lgt-blue); height: 8.8vh; width: 80rem; animation: navload 3.2s ease-in-out; }
+
+.navbar { float: left; margin-top: -8vh; margin-left: 120vh; }
+
+.navbar li { list-style: none; margin-left: 4vh; text-transform: capitalize; }
+
+/* CSS Effects Goes Here */
+.appname:hover { color: var(--color-dgr-blue); }
+
+.navbar li:hover { color: var(--color-dgr-blue); }
+
+.navbar li.active { color: var(--color-prpl); text-decoration: underline; text-underline-offset: 0.4vh; }

@@ -1,0 +1,58 @@
+@import url('../../master.css');
+
+.errmsgcard
+{
+    border: 0px solid;
+    border-radius: 8px;
+    height: 70.6vh;
+    width: 100vh;
+    margin-left: 22rem;
+    margin-top: 0.8rem;
+    box-shadow: 0px 2px 8px 2.6px var(--color-new-blk);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    animation: compload 2s ease-in-out;
+    color: var(--color-black) !important;
+}
+
+.btnclose
+{
+    margin-left: 92vh;
+    margin-right: 3.5vh;
+    margin-top: 2.4vh;
+    margin-bottom: -6.8vh;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 9;
+    color: var(--color-black);
+}
+
+.btnclose:active { color: var(--color-black); }
+
+.btnclose:hover { border: 0.4vh solid var(--color-black); border-radius: 2.8vh; }
+
+.errorMsg
+{
+    color: var(--color-black);
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 26px;
+    padding-top: 0.2vh;
+}
+
+.errorMsg2
+{
+    color: var(--color-black);
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.black { color: var(--color-black); }
+
+.returnMainSection { margin-left: 50px; text-transform: uppercase; text-decoration: none; color: var(--color-black) !important; }
+
+.returnMainSection:hover { color: var(--color-black) !important; text-decoration: underline; text-underline-offset: 2px; text-decoration-color: var(--color-black); }

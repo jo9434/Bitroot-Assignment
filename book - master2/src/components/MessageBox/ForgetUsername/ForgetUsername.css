@@ -1,0 +1,58 @@
+@import url("../../../master.css");
+
+.fgtunamepage { animation: compload 3.2s ease-in-out; border: 0.4vh solid var(--color-black); }
+
+.heading { margin-top: -2.4vh; margin-bottom: -0.8vh; color: var(--color-black); }
+
+.col-bar { border: 0.3vh solid var(--color-black); background: var(--color-black); }
+
+.btnclose
+{
+    margin-left: 48vh;
+    margin-top: 2.4vh;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-prpl-red);
+}
+
+.txtbox
+{
+    width: 40vh;
+    background-color: var(--color-white);
+    border-color: var(--color-black) !important;
+    border-left: 0vh;
+    border-right: 0vh;
+    border-top: 0vh;
+    padding-left: 1.4vh;
+    margin-left: -1.4vh;
+    transition: 0.2s ease-in-out;
+    outline: none;
+    color: var(--color-black) !important;
+}
+
+.txtbox:focus
+{
+    border: 0.4vh solid;
+    border-radius: 1.6vh;
+    outline: none !important;
+}
+
+.btnStyle
+{
+    text-transform: uppercase;
+    margin-top: -0.4vh;
+    font-weight: 600;
+    letter-spacing: 0.1vh;
+    border: 0.4vh solid var(--color-black);
+    border-radius: 2vh;
+    padding: 0.8vh 2vh 0.8vh 2vh;
+}
+
+.btnStyle:hover { border: none; background: var(--color-black); color: var(--color-white); transition: 0.4s ease-in-out; }
+
+.btnStyle:active { border: 0.4vh solid var(--color-black); background-color: var(--color-white); color: var(--color-black); }
+
+::placeholder { color: var(--color-black); }
+
+:-moz-placeholder, ::-moz-placeholder { color: var(--color-black); }

@@ -1,0 +1,60 @@
+:root
+{
+    --color-white: #fff;
+    --color-black: #000;
+    --color-prpl-red: #C13584;
+    --color-brgt-red: #FD1D1D;
+    --color-yel: #ffc107;
+    --color-grn: #036738;
+}
+
+.regpage { animation: compload 3.2s ease-in-out; border: 0.4vh solid; }
+
+.heading { margin-top: -2vh; margin-bottom: -0.8vh; color: var(--color-black); }
+
+/* Uncomment this line and remove text if brand name has to be there in
+the register page heading
+.heading u { text-underline-offset: 0.4vh; }*/
+
+.btnclose
+{
+    margin-left: 48vh;
+    margin-top: 2.4vh;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-black);
+}
+
+.btnclose:active { color: var(--color-black); }
+
+.btnclose:hover { border: 0.4vh solid var(--color-black); border-radius: 2.8vh; }
+
+.txtbox
+{
+    width: 40vh;
+    background-color: var(--color-white);
+    border-color: var(--color-black) !important;
+    border-left: 0vh;
+    border-right: 0vh;
+    border-top: 0vh;
+    padding-left: 1.4vh;
+    margin-left: -1.4vh;
+    transition: 0.2s ease-in-out;
+    outline: none;
+    color: var(--color-black);
+}
+
+.txtbox:focus { border: 0.4vh solid; border-radius: 1.6vh; outline: none !important; }
+
+.col-bar { border: 0.3vh solid var(--color-black); background: var(--color-black); }
+
+.bttn1, .bttn2 { text-transform: uppercase; margin-top: 2.6vh !important; }
+
+.bttn1 { margin-left: -1.8vh; }
+
+.bttn1:hover, .bttn2:hover { background: var(--color-white); color: var(--color-black); }
+
+::placeholder { color: var(--color-black); }
+
+:-moz-placeholder, ::-moz-placeholder { color: var(--color-black); }
