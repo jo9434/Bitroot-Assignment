@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Roboto Font CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CDN CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- jQuery JS Slim Minified -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+    <title>MediceX | Dashboard</title>
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar">
+            <h1 class="appname">Medi<span class="blue">ceX</span></h1>
+            <div class="docprof dropdown">
+                <button class="docprofbtn btn btn-light dropdown-toggle" type="button" id="userprofbtn" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="docprofimg" src="./assets/images/dr-john-smith-portrait.png" alt="Dr. John Smith"> john smith
+                </button>
+                <ul class="userprofmenu dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Account</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+        </nav>
+
+        <!-- Sub-Main Starts Here -->
+        <div class="sub-main">
+            <div class="patient-details card">
+                <h1 class="txtheading">personal information</h1>
+                <div class="patient-card-details card">
+                    <img class="patientimg" src="./assets/images/patient-mario-rossi-portrait.jpg" alt="Patient Mario Rossi">
+                    <p class="patientname">mario rossi</p>
+                    <p class="patientdesc">patient</p>
+                </div>
+                
+                <div class="otherinfo">
+                    <div class="pdinfo1">
+                        <p id="genderlabel" class="label">Sex</p><p id="genderinfo" class="info">Male</p>
+                    </div>
+                    <div class="pdinfo2">
+                        <p id="bornlabel" class="label">Born</p><p id="bornplaceinfo" class="info">Nato a Milano</p>
+                    </div>
+                    <div class="pdinfo1">
+                        <p id="agelabel" class="label">Age</p><p id="ageinfo" class="info">25</p>
+                    </div>
+                    <div class="pdinfo3">
+                        <p id="professionlabel" class="label">Profession</p><p id="professioninfo" class="info">Head - R&D</p>
+                    </div>
+                    <div class="pdinfo1">
+                        <p id="poblabel" class="label">Place of Birth</p><p id="pobinfo" class="info">Naples</p>
+                    </div>
+                    <div class="pdinfo4">
+                        <p id="residencelabel" class="label">Residence</p><p id="residenceinfo" class="info">Naples</p>
+                    </div>
+                    <div class="pdinfo1">
+                        <p id="ethnicitylabel" class="label">Ethnicity</p><p id="ethnicityinfo" class="info">White</p>
+                    </div>
+                    <div class="pdinfo5">
+                        <p id="degreelabel" class="label">Degree</p><p id="degreeinfo" class="info">Master of Science</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="patient-details2 card">
+                <h1 class="txtheading2">Alteza a messa corporea</h1>
+                <div class="buttongroup">
+                    <a class="btnlatestgrp default" style="float: left; margin-left: -0.01rem;" href="#latestGroup">Latest</a>
+                    <a class="btnmonthdiff" href="#monthdiffGroup" style="float: right; width: 7rem; margin-top: 0.01rem;">3 Months Difference</a>
+                </div>
+                <div id="latestGroup" class="latestGrp">
+                    <div class="lginfo1">
+                        <p class="lglabel1">Height (CM)</p>
+                        <p class="lgtext1">180.00</p>
+                        <i class="iconCheck1 fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="lginfo2">
+                        <p class="lglabel2">Lean Mass (Kg)</p>
+                        <p class="lgtext2">60.00</p>
+                        <i class="iconCheck2 fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="lginfo3">
+                        <p class="lglabel3">Waist circumference (cm)</p>
+                        <p class="lgtext3">102.17</p>
+                        <i class="iconUncheck1 fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <div class="lginfo4">
+                        <p class="lglabel4">Body Mass Index (m^2)</p>
+                        <p class="lgtext4">23.47</p>
+                        <i class="iconCheck3 fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="lginfo5">
+                        <p class="lglabel5">Body Weight</p>
+                        <p class="lgtext5">77.00</p>
+                        <i class="iconUncheck2 fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <div id="monthdiffGroup" class="monthdiffGrp">
+                    <div class="mdinfo1">
+                        <p class="mdlabel1">Height (CM)</p>
+                        <p class="mdtext1">180.00</p>
+                        <i class="mdiconCheck1 fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="mdinfo2">
+                        <p class="mdlabel2">Lean Mass (Kg)</p>
+                        <p class="mdtext2">60.00</p>
+                        <i class="mdiconCheck2 fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="mdinfo3">
+                        <p class="mdlabel3">Waist circumference (cm)</p>
+                        <p class="mdtext3">87.20</p>
+                        <i class="mdiconCheck3 fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="mdinfo4">
+                        <p class="mdlabel4">Body Mass Index (m^2)</p>
+                        <p class="mdtext4">23.47</p>
+                        <i class="mdiconCheck4 fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="mdinfo5">
+                        <p class="mdlabel5">Body Weight</p>
+                        <p class="mdtext5">62.00</p>
+                        <i class="mdiconCheck5 fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bodyChartAnalysis" class="bodyChartAnalysis">
+                <div class="bcasubgrp">
+                    <div class="bcacardsubgrp">
+                        <div class="bcacard1 card">
+                            <i class="iconBlue fa-solid fa-heart-pulse"></i>
+                            <p class="bcalabel1">Heart Rate (bpm)</p>
+                            <p class="bcatext1">74.67</p>
+                            <svg class="datawave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#0099ff" fill-opacity="50%" d="M0,288L17.1,282.7C34.3,277,69,267,103,261.3C137.1,256,171,256,206,229.3C240,203,274,149,309,138.7C342.9,128,377,160,411,181.3C445.7,203,480,213,514,197.3C548.6,181,583,139,617,128C651.4,117,686,139,720,160C754.3,181,789,203,823,224C857.1,245,891,267,926,229.3C960,192,994,96,1029,74.7C1062.9,53,1097,107,1131,112C1165.7,117,1200,75,1234,48C1268.6,21,1303,11,1337,5.3C1371.4,0,1406,0,1423,0L1440,0L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path>
+                            </svg>
+                        </div>
+                        <div class="bcacard2 card">
+                            <i class="iconGreen fa-solid fa-heart-pulse"></i>
+                            <p class="bcalabel2">Respiration Rate</p>
+                            <p class="bcatext2">15.00 <span style="font-size: 0.8rem; font-weight: normal;">/ ms</span></p>
+                            <svg class="datawave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#00cba9" fill-opacity="50%" stroke="rect" d="M0,96L17.1,112C34.3,128,69,160,103,144C137.1,128,171,64,206,42.7C240,21,274,43,309,74.7C342.9,107,377,149,411,165.3C445.7,181,480,171,514,176C548.6,181,583,203,617,213.3C651.4,224,686,224,720,213.3C754.3,203,789,181,823,192C857.1,203,891,245,926,245.3C960,245,994,203,1029,154.7C1062.9,107,1097,53,1131,69.3C1165.7,85,1200,171,1234,192C1268.6,213,1303,171,1337,133.3C1371.4,96,1406,64,1423,48L1440,32L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path>
+                            </svg>
+                        </div>
+                        <div class="bcacard3 card">
+                            <i class="iconBlue fa-solid fa-heart-pulse"></i>
+                            <p class="bcalabel2">Dyastolic BP (mmHg)</p>
+                            <p class="bcatext3">84.33</p>
+                            <div class="databar">
+                                <p class="startrange">30</p>
+                                <p class="endrange">84.33</p>
+                            </div>
+                        </div>
+                        <div class="bcacard4 card">
+                            <i class="iconGreen fa-solid fa-heart-pulse"></i>
+                            <p class="bcalabel4">Lorem ipsum (lorem)</p>
+                            <p class="bcatext4">74.76</p>
+                            <div class="databar">
+                                <p class="startrange">30</p>
+                                <p class="endrange">84.33</p>
+                            </div>
+                        </div>
+                        <div class="bcacard5 card">
+                            <i class="iconBlue fa-solid fa-heart-pulse"></i>
+                            <p class="bcalabel5">Lorem ipsum (lorem)</p>
+                            <p class="bcatext5">76.83</p>
+                            <svg class="datawave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#ff5500" fill-opacity="50%" d="M0,192L10.4,181.3C20.9,171,42,149,63,165.3C83.5,181,104,235,125,224C146.1,213,167,139,188,90.7C208.7,43,230,21,250,48C271.3,75,292,149,313,165.3C333.9,181,355,139,376,144C396.5,149,417,203,438,202.7C459.1,203,480,149,501,128C521.7,107,543,117,563,133.3C584.3,149,605,171,626,186.7C647,203,668,213,689,229.3C709.6,245,730,267,751,256C772.2,245,793,203,814,208C834.8,213,856,267,877,261.3C897.4,256,918,192,939,154.7C960,117,981,107,1002,106.7C1022.6,107,1043,117,1064,117.3C1085.2,117,1106,107,1127,133.3C1147.8,160,1169,224,1190,218.7C1210.4,213,1231,139,1252,106.7C1273,75,1294,85,1315,90.7C1335.7,96,1357,96,1377,85.3C1398.3,75,1419,53,1430,42.7L1440,32L1440,320L1429.6,320C1419.1,320,1398,320,1377,320C1356.5,320,1336,320,1315,320C1293.9,320,1273,320,1252,320C1231.3,320,1210,320,1190,320C1168.7,320,1148,320,1127,320C1106.1,320,1085,320,1064,320C1043.5,320,1023,320,1002,320C980.9,320,960,320,939,320C918.3,320,897,320,877,320C855.7,320,835,320,814,320C793,320,772,320,751,320C730.4,320,710,320,689,320C667.8,320,647,320,626,320C605.2,320,584,320,563,320C542.6,320,522,320,501,320C480,320,459,320,438,320C417.4,320,397,320,376,320C354.8,320,334,320,313,320C292.2,320,271,320,250,320C229.6,320,209,320,188,320C167,320,146,320,125,320C104.3,320,83,320,63,320C41.7,320,21,320,10,320L0,320Z"></path>
+                            </svg>
+                        </div>
+                        <div class="bcacard6 card">
+                            <i class="iconGreen fa-solid fa-heart-pulse"></i>
+                            <p class="bcalabel6">Lorem ipsum (lorem)</p>
+                            <p class="bcatext6">67.92</p>
+                            <div class="databar">
+                                <p class="startrange">30</p>
+                                <p class="endrange">84.33</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bodyfatanalysis" class="bodyfatanalysis card">
+                <h1 class="txtheading3">Messa Corporea</h1>
+                <div class="timeperiod dropdown">
+                    <button class="displayselopt btn btn-light dropdown-toggle" type="button" id="timeperiodlist" data-bs-toggle="dropdown" aria-expanded="false">
+                        Today
+                    </button>
+                    <ul class="timeperiodmenu dropdown-menu dropdown-menu-end" aria-labelledby="timeperiodlist">
+                        <li><option class="todayopt dropdown-item" type="button">Today</option></li>
+                        <li><option class="lstwkopt dropdown-item" type="button">Last Week</option></li>
+                        <li><option class="lstmthopt dropdown-item" type="button">Last Month</option></li>
+                    </ul>
+                </div>
+                <div class="bodyfatchart">
+                    <p class="txtbodyfat">Body fat %</p>
+                    <canvas id="myChart"></canvas>
+                    <canvas id="sub-chart1"></canvas>
+                    <canvas id="sub-chart2"></canvas>
+                    <p class="txtobese">Obese</p>
+                    <p class="txtovrwght">Overweight<div class="drawcirle1"></div></p>
+                    <p class="txtskinny">Skinny<div class="drawcirle2"></div></p>
+                    <p class="txtvrymslr">Very Muscular<div class="drawcirle3"></div></p>
+                    <p class="txtleanmass">Lean Mass</p>
+                </div>
+            </div>
+
+            <div id="maincard7" class="maincard7 card">
+                <h1 class="txtheading3">Altre Informazioni</h1>
+                <div class="timeperiod2 dropdown">
+                    <button class="displayselopt btn btn-light dropdown-toggle" type="button" id="timeperiodlist" data-bs-toggle="dropdown" aria-expanded="false">
+                        Today
+                    </button>
+                    <ul class="timeperiodmenu dropdown-menu dropdown-menu-end" aria-labelledby="timeperiodlist">
+                        <li><option class="todayopt dropdown-item" type="button">Today</option></li>
+                        <li><option class="lstwkopt dropdown-item" type="button">Last Week</option></li>
+                        <li><option class="lstmthopt dropdown-item" type="button">Last Month</option></li>
+                    </ul>
+                </div>
+
+                <div class="otherinfo container">
+                    <div class="infocard1 row">
+                        <p class="infocardtxt col">Body Temperature</p>
+                        <h6 class="infocardlevel">36.8<sup style="font-weight: normal; margin-left: 0.1rem; vertical-align: super;">o</sup></h6>
+                        <svg class="infodatawave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#0099ff" fill-opacity="0.5" d="M0,32L18.5,80C36.9,128,74,224,111,224C147.7,224,185,128,222,101.3C258.5,75,295,117,332,154.7C369.2,192,406,224,443,245.3C480,267,517,277,554,277.3C590.8,277,628,267,665,245.3C701.5,224,738,192,775,192C812.3,192,849,224,886,224C923.1,224,960,192,997,202.7C1033.8,213,1071,267,1108,277.3C1144.6,288,1182,256,1218,229.3C1255.4,203,1292,181,1329,170.7C1366.2,160,1403,160,1422,160L1440,160L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path>
+                        </svg>
+                    </div>
+                    <div class="infocard2 row">
+                        <p class="infocardtxt col">Oxygen Saturation (%)</p>
+                        <h6 class="infocardlevel">0.91</h6>
+                        <svg class="infodatawave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#00cba9" fill-opacity="0.5" d="M0,224L30,229.3C60,235,120,245,180,213.3C240,181,300,107,360,117.3C420,128,480,224,540,245.3C600,267,660,213,720,181.3C780,149,840,139,900,154.7C960,171,1020,213,1080,224C1140,235,1200,213,1260,176C1320,139,1380,85,1410,58.7L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+                        </svg>
+                    </div>
+                    <div class="infocard3 row">
+                        <p class="infocardtxt col">Glucose</p>
+                        <h6 class="infocardlevel">99</h6>
+                        <p class="statsnormal">Normal</p>
+                        <svg class="infodatawave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#00cba9" fill-opacity="0.5" d="M0,288L6.9,261.3C13.7,235,27,181,41,149.3C54.9,117,69,107,82,133.3C96,160,110,224,123,240C137.1,256,151,224,165,218.7C178.3,213,192,235,206,240C219.4,245,233,235,247,208C260.6,181,274,139,288,128C301.7,117,315,139,329,149.3C342.9,160,357,160,370,154.7C384,149,398,139,411,117.3C425.1,96,439,64,453,90.7C466.3,117,480,203,494,224C507.4,245,521,203,535,154.7C548.6,107,562,53,576,74.7C589.7,96,603,192,617,213.3C630.9,235,645,181,658,160C672,139,686,149,699,176C713.1,203,727,245,741,266.7C754.3,288,768,288,782,277.3C795.4,267,809,245,823,234.7C836.6,224,850,224,864,192C877.7,160,891,96,905,90.7C918.9,85,933,139,946,170.7C960,203,974,213,987,218.7C1001.1,224,1015,224,1029,218.7C1042.3,213,1056,203,1070,213.3C1083.4,224,1097,256,1111,266.7C1124.6,277,1138,267,1152,218.7C1165.7,171,1179,85,1193,42.7C1206.9,0,1221,0,1234,32C1248,64,1262,128,1275,160C1289.1,192,1303,192,1317,208C1330.3,224,1344,256,1358,245.3C1371.4,235,1385,181,1399,154.7C1412.6,128,1426,128,1433,128L1440,128L1440,320L1433.1,320C1426.3,320,1413,320,1399,320C1385.1,320,1371,320,1358,320C1344,320,1330,320,1317,320C1302.9,320,1289,320,1275,320C1261.7,320,1248,320,1234,320C1220.6,320,1207,320,1193,320C1179.4,320,1166,320,1152,320C1138.3,320,1125,320,1111,320C1097.1,320,1083,320,1070,320C1056,320,1042,320,1029,320C1014.9,320,1001,320,987,320C973.7,320,960,320,946,320C932.6,320,919,320,905,320C891.4,320,878,320,864,320C850.3,320,837,320,823,320C809.1,320,795,320,782,320C768,320,754,320,741,320C726.9,320,713,320,699,320C685.7,320,672,320,658,320C644.6,320,631,320,617,320C603.4,320,590,320,576,320C562.3,320,549,320,535,320C521.1,320,507,320,494,320C480,320,466,320,453,320C438.9,320,425,320,411,320C397.7,320,384,320,370,320C356.6,320,343,320,329,320C315.4,320,302,320,288,320C274.3,320,261,320,247,320C233.1,320,219,320,206,320C192,320,178,320,165,320C150.9,320,137,320,123,320C109.7,320,96,320,82,320C68.6,320,55,320,41,320C27.4,320,14,320,7,320L0,320Z"></path>
+                        </svg>
+                        <p style="margin-top: -2.8rem; margin-left: 4.8rem; font-size: 0.68rem; opacity: 50%;">Glucose (in mg/dL)</p>
+                    </div>
+                    <div class="infocard4 row">
+                        <p class="infocardtxt col">Pulse</p>
+                        <h6 class="infocardlevel">48</h6>
+                        <p class="statslow">Low</p>
+                        <svg class="infodatawave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#ff0000" fill-opacity="0.5" d="M0,96L13.3,101.3C26.7,107,53,117,80,106.7C106.7,96,133,64,160,48C186.7,32,213,32,240,64C266.7,96,293,160,320,181.3C346.7,203,373,181,400,160C426.7,139,453,117,480,128C506.7,139,533,181,560,170.7C586.7,160,613,96,640,80C666.7,64,693,96,720,101.3C746.7,107,773,85,800,106.7C826.7,128,853,192,880,224C906.7,256,933,256,960,234.7C986.7,213,1013,171,1040,176C1066.7,181,1093,235,1120,245.3C1146.7,256,1173,224,1200,208C1226.7,192,1253,192,1280,186.7C1306.7,181,1333,171,1360,149.3C1386.7,128,1413,96,1427,80L1440,64L1440,320L1426.7,320C1413.3,320,1387,320,1360,320C1333.3,320,1307,320,1280,320C1253.3,320,1227,320,1200,320C1173.3,320,1147,320,1120,320C1093.3,320,1067,320,1040,320C1013.3,320,987,320,960,320C933.3,320,907,320,880,320C853.3,320,827,320,800,320C773.3,320,747,320,720,320C693.3,320,667,320,640,320C613.3,320,587,320,560,320C533.3,320,507,320,480,320C453.3,320,427,320,400,320C373.3,320,347,320,320,320C293.3,320,267,320,240,320C213.3,320,187,320,160,320C133.3,320,107,320,80,320C53.3,320,27,320,13,320L0,320Z"></path>
+                        </svg>
+                        <p style="margin-top: -2.8rem; margin-left: 5.6rem; font-size: 0.68rem; opacity: 50%;">Pulse (in bpm)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="maincard8" class="maincard8 card">
+                <h1 class="txtheading3">Malattie</h1>
+                <div class="timeperiod dropdown">
+                    <button class="displayselopt btn btn-light dropdown-toggle" type="button" id="timeperiodlist" data-bs-toggle="dropdown" aria-expanded="false">
+                        Today
+                    </button>
+                    <ul class="timeperiodmenu dropdown-menu dropdown-menu-end" aria-labelledby="timeperiodlist">
+                        <li><option class="todayopt dropdown-item" type="button">Today</option></li>
+                        <li><option class="lstwkopt dropdown-item" type="button">Last Week</option></li>
+                        <li><option class="lstmthopt dropdown-item" type="button">Last Month</option></li>
+                    </ul>
+                </div>
+
+                <div class="malattiegrp">
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col" style="font-size: 0.8rem; margin-right: 5rem;">
+                                <p>Source</p>
+                            </div>
+                            <div class="col" style="font-size: 0.8rem; margin-right: 10rem;">
+                                <p>Condition</p>
+                            </div>
+                            <div class="col" style="font-size: 0.8rem;">
+                                <p>Status</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="display: flex; position: relative;">
+                                <p class="mcard btnBlue text-center">Hospital</p>
+                                <p class="mcond">Aribofalvinosis</p>
+                                <p class="mstatusActive mstatusActive1"><i class="iconstatsatv fa-solid fa-circle"></i> Active</p>
+                            </div>
+                            <hr>
+                            <div class="col" style="display: flex; position: relative;">
+                                <p class="mcard btnBlue text-center">Hospital</p>
+                                <p class="mcond">Atrial Fibrillation</p>
+                                <p class="mstatusna mstatusna1"><i class="iconstatsna fa-solid fa-circle"></i> N/A</p>
+                            </div>
+                            <hr>
+                            <div class="col" style="display: flex; position: relative;">
+                                <p class="mcard mcardmob btnGreen text-center">Mobile App</p>
+                                <p class="mcond mcondmob">Congestive Health Failure</p>
+                                <p class="mstatusActive mstatusActive2"><i class="iconstatsatv fa-solid fa-circle"></i> Active</p>
+                            </div>
+                            <hr>
+                            <div class="col" style="display: flex; position: relative;">
+                                <p class="mcard btnBlue text-center">Hospital</p>
+                                <p class="mcond">Hypertension</p>
+                                <p class="mstatusActive mstatusActive3"><i class="iconstatsatv fa-solid fa-circle"></i> Active</p>
+                            </div>
+                            <hr>
+                            <div class="col" style="display: flex; position: relative;">
+                                <p class="mcard btnBlue text-center">Hospital</p>
+                                <p class="mcond">Diabetis</p>
+                                <p class="mstatusActive mstatusActive4"><i class="iconstatsatv fa-solid fa-circle"></i> Active</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button class="btnSeemore btn">See More</button>
+                </div>
+            </div>
+
+            <div id="maincard9" class="maincard9 card">
+                <h1 class="txtheading3">Farmaci</h1>
+                <div class="timeperiod2 dropdown">
+                    <button class="displayselopt btn btn-light dropdown-toggle" type="button" id="timeperiodlist" data-bs-toggle="dropdown" aria-expanded="false">
+                        Today
+                    </button>
+                    <ul class="timeperiodmenu dropdown-menu dropdown-menu-end" aria-labelledby="timeperiodlist">
+                        <li><option class="todayopt dropdown-item" type="button">Today</option></li>
+                        <li><option class="lstwkopt dropdown-item" type="button">Last Week</option></li>
+                        <li><option class="lstmthopt dropdown-item" type="button">Last Month</option></li>
+                    </ul>
+                </div>
+                <div id="medlist" class="medlist container">
+                    <div class="medsubgrp1 row">
+                        <i class="iconPrpl fa-solid fa-pills"></i>
+                        <h6 class="medname col">Aspirin 81 mg tablet</h6>
+                        <p class="medqty">1 tables qd</p>
+                        <p class="medpurdate col">05/09/2022</p>
+                        <p class="medcard btnBlue text-center">Hospital</p>
+                    </div>
+                    <div class="medsubgrp2 row">
+                        <i class="iconPrpl fa-solid fa-pills"></i>
+                        <h6 class="medname col">Calcium 500 mg tablet</h6>
+                        <p class="medqty">1 tables qd</p>
+                        <p class="medpurdate col">05/09/2022</p>
+                        <p class="medcard medcardmob btnGreen text-center">Mobile App</p>
+                    </div>
+                    <div class="medsubgrp3 row">
+                        <i class="iconPrpl fa-solid fa-pills"></i>
+                        <h6 class="medname col">Synthroid 50 mg tablet</h6>
+                        <p class="medqty">2 tables qd</p>
+                        <p class="medpurdate col">05/09/2022</p>
+                        <p class="medcard btnBlue text-center">Hospital</p>
+                    </div>
+                    <div class="medsubgrp4 row">
+                        <i class="iconPrpl fa-solid fa-pills"></i>
+                        <h6 class="medname col">Sopalmetto 160 mg capsule</h6>
+                        <p class="medqty">1 tables qd</p>
+                        <p class="medpurdate col">05/09/2022</p>
+                        <p class="medcard btnBlue text-center">Hospital</p>
+                    </div>
+                </div>
+                <button class="btnSeemore4 btn">See More</button>
+            </div>
+
+            <div id="maincard10" class="maincard10 card">
+                <h1 class="txtheading3">Risultati Analisi</h1>
+                <div class="timeperiod dropdown">
+                    <button class="displayselopt btn btn-light dropdown-toggle" type="button" id="timeperiodlist" data-bs-toggle="dropdown" aria-expanded="false">
+                        Today
+                    </button>
+                    <ul class="timeperiodmenu dropdown-menu dropdown-menu-end" aria-labelledby="timeperiodlist">
+                        <li><option class="todayopt dropdown-item" type="button">Today</option></li>
+                        <li><option class="lstwkopt dropdown-item" type="button">Last Week</option></li>
+                        <li><option class="lstmthopt dropdown-item" type="button">Last Month</option></li>
+                    </ul>
+                </div>
+                <p style="margin-top: 0.6rem; margin-left: 0.4rem; font-size: 0.8rem;">Results</p>
+                <hr class="rscolbar">
+                <div class="placeholder-glow">
+                    <span class="placeholder col-10"></span>
+                    <br>
+                    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+                </div>
+                <br>
+                <div class="placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                    <br>
+                    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+                </div>
+                <br>
+                <div class="placeholder-glow">
+                    <span class="placeholder col-8"></span>
+                    <br>
+                    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+                </div>
+                <button class="btnSeemore2 btn">See More</button>
+            </div>
+
+            <div id="maincard11" class="maincard11 card">
+                <h1 class="txtheading3">Vaccini</h1>
+                <div class="timeperiod2 dropdown">
+                    <button class="displayselopt btn btn-light dropdown-toggle" type="button" id="timeperiodlist" data-bs-toggle="dropdown" aria-expanded="false">
+                        Today
+                    </button>
+                    <ul class="timeperiodmenu dropdown-menu dropdown-menu-end" aria-labelledby="timeperiodlist">
+                        <li><option class="todayopt dropdown-item" type="button">Today</option></li>
+                        <li><option class="lstwkopt dropdown-item" type="button">Last Week</option></li>
+                        <li><option class="lstmthopt dropdown-item" type="button">Last Month</option></li>
+                    </ul>
+                </div>
+                <p style="margin-top: 0.6rem; margin-left: 0.4rem; font-size: 0.8rem;">Vaccines</p>
+                <hr class="vcolbar">
+                <div class="placeholder-glow">
+                    <span class="placeholder col-10"></span>
+                    <br>
+                    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+                </div>
+                <br>
+                <div class="placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                    <br>
+                    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+                </div>
+                <br>
+                <div class="placeholder-glow">
+                    <span class="placeholder col-8"></span>
+                    <br>
+                    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+                </div>
+                <button class="btnSeemore3 btn">See More</button>
+            </div>
+        </div>
+        <!-- Sub-Main Ends Here -->
+
+        <footer class="medfootergrp card placeholder-glow text-center">
+            <h1 class="txtMsg placeholder bg-light text-center">Creative Design in <span class="blue">Process...</span></h1>
+        </footer>
+    </div>
+</body>
+</html>

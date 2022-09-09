@@ -1,0 +1,628 @@
+:root {
+    --font-roboto: 'Roboto';
+    --color-black: #000;
+    --color-white: #fff;
+    --color-lgtgrn: rgb(210, 255, 210);
+    --color-medgrn: lightgreen;
+    --color-org: orange;
+    --color-red: red;
+    --color-dgrblue: dodgerblue;
+    --color-lgtblue: rgb(206, 231, 255);
+    --color-whtsmk: whitesmoke;
+    --color-lgtgray: lightgray;
+    --color-lgtprpl: rgb(255, 214, 255);
+    --color-prpl: rgb(245, 146, 245);
+    --color-drkprpl: purple;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-roboto);
+    overflow-x: hidden;
+}
+
+.navbar {
+    height: 3.6rem;
+    width: 79.7rem;
+    position: fixed;
+    z-index: 80;
+    padding: 0.8rem 2.8rem;
+    border: none;
+    background-color: var(--color-white);
+    box-shadow: -0.001rem -0.001rem 0.2rem 0.4rem var(--color-whtsmk);
+}
+
+.appname { font-size: 1.8rem; font-weight: bold; }
+
+.blue { color: var(--color-dgrblue); }
+
+.docprof {
+    background-color: var(--color-white);
+}
+
+.docprofbtn {
+    padding: 0 0.1rem;
+    height: 2em;
+    text-transform: capitalize;
+    background-color: var(--color-white);
+    margin-bottom: 0.8rem;
+}
+
+.docprofimg {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+}
+
+/* Sub-Main Section Starts Here */
+
+.sub-main { padding-top: 4rem; }
+
+.patient-details {
+    height: 23.4rem;
+    width: 14rem;
+    margin-top: 1.8rem;
+    margin-left: 1.8rem;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: -0.001rem -0.001rem 0.2rem 0.2rem var(--color-whtsmk);
+}
+
+.txtheading {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.patient-card-details {
+    margin-bottom: -0.8rem;
+    height: 5rem !important;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: var(--color-whtsmk);
+}
+
+.patientimg {
+    height: 5rem;
+    width: 4.4rem;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+}
+
+.patientname { margin-left: 5.2rem; margin-top: -3.6rem; text-transform: capitalize; font-size: 0.9rem; }
+
+.patientdesc {
+    margin-left: 5.2rem;
+    margin-top: -1rem;
+    margin-bottom: -2rem;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    color: var(--color-black);
+    opacity: 50%;
+}
+
+.otherinfo { padding: 2.4rem 0; font-size: 0.8rem; margin-bottom: -8rem !important; }
+
+.label { color: var(--color-black); opacity: 50%; }
+
+.info { color: var(--color-black); margin-top: -1.2rem; }
+
+.pdinfo2 { float: right; margin-right: 0.6rem; margin-top: -3.19rem; }
+
+.pdinfo3 { float: right; margin-right: 1.6rem; margin-top: -3.19rem; }
+
+.pdinfo4 { float: right; margin-right: 2rem; margin-top: -3.19rem; }
+
+.pdinfo5 { float: right; margin-right: -0.6rem; margin-top: -3.19rem; }
+
+.patient-details2 {
+    height: 20rem;
+    width: 14rem;
+    margin-top: 1.8rem;
+    margin-left: 1.8rem;
+    padding: 1.3rem;
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: -0.001rem -0.001rem 0.2rem 0.2rem var(--color-whtsmk);
+}
+
+.txtheading2 { font-size: 1rem; font-weight: bold; text-align: center; margin-bottom: 1rem; }
+
+.buttongroup {
+    height: 2.5rem;
+    width: 11.4rem;
+    border-radius: 0.6rem;
+    background-color: var(--color-whtsmk);
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.default { background-color: var(--color-white); }
+
+.buttongroup a {
+    height: 2.08rem;
+    width: 3.8rem;
+    padding: 0.46rem 0;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: var(--color-black);
+    border-radius: 0.6rem;
+}
+
+.latestGrp { position: relative; margin-top: 0.8rem; }
+
+.lginfo1, .lginfo2, .lginfo3, .lginfo4, .lginfo5,
+.mdinfo1, .mdinfo2, .mdinfo3, .mdinfo4, .mdinfo5 { display: flex; margin-bottom: -0.8rem; }
+
+.lglabel1, .lglabel2, .lglabel3, .lglabel4, .lglabel5,
+.mdlabel1, .mdlabel2, .mdlabel3, .mdlabel4, .mdlabel5 { font-size: 0.8rem; }
+
+.lglabel1, .mdlabel1 { margin-right: -4.2rem; }
+
+.lglabel2, .mdlabel2 { margin-right: -2.4rem; }
+
+.lglabel3, .mdlabel3 { margin-right: -7.8rem; }
+
+.lglabel4, .mdlabel4 { margin-right: -0.4rem; }
+
+.lgtext1, .lgtext2, .lgtext3, .lgtext4, .lgtext5,
+.mdtext1, .mdtext2, .mdtext3, .mdtext4, .mdtext5 {
+    display: block;
+    position: relative;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.lgtext1, .mdtext1 { margin-left: -0.2rem; }
+
+.lgtext2, .mdtext2 { margin-left: -3.2rem; }
+
+.lgtext3, .mdtext3 { margin-left: -1.4rem; }
+
+.lgtext4, .mdtext4 { margin-left: -7.9rem; }
+
+.lgtext5, .mdtext5 { margin-left: -4.4rem; }
+
+.iconCheck1, .iconCheck2, .iconCheck3, .mdiconCheck1,
+.mdiconCheck2, .mdiconCheck3, .mdiconCheck4, .mdiconCheck5 {
+    font-size: 1.4rem; color: var(--color-medgrn); margin-top: 0.2rem;
+}
+
+.iconCheck1, .mdiconCheck1 { margin-left: 7.6rem; }
+
+.iconCheck2, .mdiconCheck2 { margin-left: 8rem; }
+
+.iconCheck3, .mdiconCheck3 { margin-left: 7.98rem; }
+
+.iconUncheck1, .iconUncheck2 { font-size: 1.4rem; color: var(--color-red); margin-top: 0.2rem; }
+
+.iconUncheck1 { margin-left: 7.54rem; }
+
+.iconUncheck2, .mdiconCheck4, .mdiconCheck5 { margin-left: 7.94rem; }
+
+.monthdiffGrp { display: none; position: relative; margin-top: 0.8rem; }
+
+.bodyChartAnalysis { margin-left: 17.2rem; margin-top: -45rem; }
+
+.bcasubgrp {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bcasubgrp:hover { overflow-x: scroll; }
+
+.bcacardsubgrp { display: flex; position: relative; margin-bottom: 0.4rem; }
+
+.bcacard1, .bcacard2, .bcacard3,
+.bcacard4, .bcacard5, .bcacard6 {
+    height: 8rem;
+    width: 14rem;
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: -0.001rem -0.001rem 0.2rem 0.2rem var(--color-whtsmk);
+    margin-top: 0.07rem;
+}
+
+.bcacard1 { margin-left: 0.2rem; }
+
+.bcacard2, .bcacard3, .bcacard4, .bcacard5, .bcacard6 { margin-left: 1.6rem; }
+
+.bcacard6 { margin-right: 1.4rem; }
+
+.iconBlue, .iconGreen {
+    height: 2.8rem;
+    width: 2.8rem;
+    font-size: 1.2rem;
+    padding: 0.94rem 0.78rem;
+    margin: 1.6rem 1.4rem;
+    border-radius: 2rem;
+}
+
+.iconBlue { color: var(--color-dgrblue); background-color: var(--color-lgtblue); }
+
+.iconGreen { color: var(--color-medgrn); background-color: var(--color-lgtgrn); }
+
+.bcalabel1, .bcalabel2, .bcalabel3, .bcalabel4, .bcalabel5, .bcalabel6 {
+    opacity: 50%;
+    font-size: 0.8rem;
+    margin-top: -4.5rem;
+    margin-left: 5rem;
+    color: var(--color-black);
+}
+
+.bcatext1, .bcatext2, .bcatext3, .bcatext4, .bcatext5, .bcatext6 {
+    margin-top: -1.2rem;
+    margin-left: 5rem;
+    color: var(--color-black);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.datawave {
+    height: 10rem;
+    width: fit-content;
+    margin-top: -0.72rem;
+}
+
+.databar {
+    margin: -0.6rem 1.2rem;
+    height: 1rem;
+    width: 11.56rem;
+    background-color: var(--color-medgrn);
+}
+
+.startrange, .endrange { opacity: 50%; font-size: 0.8rem; border-width: 0.4rem; }
+
+.startrange { margin-left: 0.2rem; margin-top: 1.6rem; }
+
+.endrange { margin-left: 9.2rem; margin-top: -2.2rem; }
+
+.bodyfatanalysis {
+    padding: 1.2rem 1rem;
+    height: 17.02rem;
+    width: 32rem;
+    border: none;
+    border-radius: 0.6rem;
+    margin-left: 17.4rem;
+    margin-top: 1.6rem;
+    box-shadow: -0.001rem -0.001rem 0.2rem 0.2rem var(--color-whtsmk);
+}
+
+.txtheading3 { font-size: 1rem; font-weight: bold; margin-bottom: 1rem; }
+
+.timeperiod {
+    margin-left: 24rem;
+    margin-top: -2.6rem;
+    border: none;
+}
+
+.displayselopt, .todayopt, .lstwkopt, .lstmthopt { font-size: 0.8rem !important; }
+
+.txtbodyfat {
+    opacity: 50%;
+    z-index: 100;
+    transform: rotate(-90deg);
+    margin-left: -28rem;
+    margin-top: -22rem;
+}
+
+#myChart {
+    border: 0.1rem solid var(--color-lgtgray);
+    border-top: 0;
+    border-right: 0;
+    height: 10.8rem;
+    width: 27.6rem;
+    margin-top: 19.7rem;
+    margin-left: 2rem;
+}
+
+#sub-chart1 {
+    border: 0.1rem solid var(--color-lgtgray);
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+    height: 10.8rem;
+    width: 23.6rem;
+    margin-top: -20rem !important;
+    margin-bottom: 1.6rem;
+    margin-left: -7.4rem;
+}
+
+#sub-chart2 {
+    border: 0.1rem solid var(--color-lgtgray);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    height: 14rem;
+    width: 27.6rem;
+    margin-top: -8rem !important;
+    margin-left: 2rem;
+}
+
+.txtobese { margin-top: -17.6rem; margin-left: 7.2rem; font-size: 0.84rem; opacity: 50%; }
+
+.txtovrwght { margin-top: -2.28rem; margin-left: 20rem; font-size: 0.84rem; opacity: 50%; }
+
+.txtskinny { margin-top: 4.2rem; margin-left: 7.2rem; font-size: 0.84rem; opacity: 50%; }
+
+.txtvrymslr { margin-top: -1.29rem; margin-left: 20rem; font-size: 0.84rem; opacity: 50%; }
+
+.drawcirle1 {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 25rem;
+    border-radius: 2rem;
+    margin-top: -3.18rem;
+    background-color: var(--color-prpl);
+}
+
+.drawcirle2 {
+    height: 0.8rem;
+    width: 0.8rem;
+    margin-top: -2.8rem;
+    margin-left: 12.6rem;
+    border-radius: 2rem;
+    background-color: var(--color-prpl);
+}
+
+.drawcirle3 {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-top: -2.68rem;
+    margin-left: 17.4rem;
+    border-radius: 2rem;
+    background-color: var(--color-prpl);
+}
+
+.txtleanmass { text-align: center; opacity: 50%; margin-top: 4.12rem; }
+
+.maincard7 {
+    padding: 1.2rem 1rem;
+    height: 17.02rem;
+    width: 27.5rem;
+    border: none;
+    border-radius: 0.6rem;
+    margin-left: 50.8rem;
+    margin-top: -17rem;
+    box-shadow: -0.001rem -0.001rem 0.2rem 0.2rem var(--color-whtsmk);
+}
+
+.infocard1 { margin-top: -1.8rem; }
+
+.infocard2 { margin-top: 1.8rem; }
+
+.infocard3 { margin-top: -12.43rem; margin-left: 12rem; }
+
+.infocard4 { margin-top: 0.64rem; margin-left: 12rem; }
+
+.infocardtxt { font-size: 0.68rem; }
+
+.infocardlevel { font-size: 1rem; font-weight: bold; margin-top: -0.6rem; }
+
+.statsnormal { font-size: 0.68rem; color: var(--color-medgrn); margin-top: 1.3rem; }
+
+.statslow { font-size: 0.68rem; color: var(--color-red); margin-top: 1.3rem; }
+
+.infodatawave1 { height: 2.4rem; width: fit-content; margin-top: -0.4rem; }
+
+.infodatawave2 { height: 2.4rem; width: fit-content; margin-top: -5.4rem; margin-left: 2.4rem; }
+
+.maincard9 {
+    display: inline-block;
+    position: absolute;
+    padding: 1.2rem 1rem;
+    height: 20rem;
+    width: 27.5rem;
+    border: none;
+    border-radius: 0.6rem;
+    margin-left: 50.8rem;
+    margin-top: -24rem;
+    box-shadow: -0.001rem -0.001rem 0.2rem 0.2rem var(--color-whtsmk);
+}
+
+.maincard11 {
+    display: inline-block;
+    position: absolute;
+    padding: 1.2rem 1rem;
+    height: 24rem;
+    width: 27.5rem;
+    border: none;
+    border-radius: 0.6rem;
+    margin-left: 50.8rem;
+    margin-top: -2.2rem;
+    box-shadow: -0.001rem -0.001rem 0.2rem 0.2rem var(--color-whtsmk);
+}
+
+.timeperiod2 {
+    margin-left: 19.6rem;
+    margin-top: -2.6rem;
+    border: none;
+}
+
+.displayselopt, .todayopt, .lstwkopt, .lstmthopt { font-size: 0.8rem !important; }
+
+.maincard8 {
+    padding: 1.2rem 1rem;
+    height: 24rem;
+    width: 32rem;
+    border: none;
+    border-radius: 0.6rem;
+    margin-left: 17.4rem;
+    margin-top: 1.8rem;
+    box-shadow: -0.001rem -0.001rem 0.2rem 0.2rem var(--color-whtsmk);
+}
+
+.maincard10 {
+    display: inline-block;
+    position: absolute;
+    padding: 1.2rem 1rem;
+    height: 24rem;
+    width: 32rem;
+    border: none;
+    border-radius: 0.6rem;
+    margin-left: 17.4rem;
+    margin-top: 1.8rem;
+    box-shadow: -0.001rem -0.001rem 0.2rem 0.2rem var(--color-whtsmk);
+}
+
+.mcard {
+    height: 1.2rem;
+    width: 3.4rem;
+    padding: 0.1rem;
+    font-size: 0.72rem;
+    margin-right: 6.2rem;
+    border-radius: 0.2rem;
+    color: var(--color-white);
+}
+
+.mcardmob { width: 4.4rem; }
+
+.btnBlue { background-color: var(--color-dgrblue); }
+
+.btnGreen { background-color: var(--color-medgrn); }
+
+.mcond, .mstatusActive, .mstatusna { font-size: 0.72rem; }
+
+.mcondmob { margin-left: -1.08rem; }
+
+.mstatusActive1 { margin-left: 10.8rem; }
+
+.mstatusActive2 { margin-left: 7.4rem; }
+
+.mstatusActive3 { margin-left: 11.2rem; }
+
+.mstatusActive4 { margin-left: 12.8rem; }
+
+.mstatusna1 { margin-left: 10.2rem; }
+
+.iconstatsatv { color: var(--color-org); }
+
+.iconstatsna { color: var(--color-lgtgray); }
+
+.btnSeemore { margin-left: 12.8rem; margin-top: -1rem; font-size: 0.68rem; }
+
+.btnSeemore2 { width: 6rem; margin-left: 12.4rem; margin-top: 1.2rem; font-size: 0.68rem; }
+
+.btnSeemore3 { width: 6rem; margin-left: 10.6rem; margin-top: 1.2rem; font-size: 0.68rem; }
+
+.btnSeemore4 { width: 6rem; margin-left: 10.6rem; margin-top: -0.5rem; font-size: 0.68rem; }
+
+.rscolbar {
+    width: 8rem;
+    opacity: 100%;
+    margin-top: -1.2rem;
+    border-radius: 0.8rem;
+    background-color: var(--color-dgrblue);
+    border: 0.1rem solid var(--color-dgrblue);
+    animation: rscolbaranim 4s infinite ease-in-out;
+}
+
+.vcolbar {
+    width: 6rem;
+    opacity: 100%;
+    margin-top: -1.2rem;
+    border-radius: 0.8rem;
+    background-color: var(--color-dgrblue);
+    border: 0.1rem solid var(--color-dgrblue);
+    animation: vcolbaranim 4s infinite ease-in-out;
+}
+
+.medsubgrp1 { display: inline-flex; position: relative; padding-top: 1.2rem; }
+
+.iconPrpl {
+    height: 2.4rem !important;
+    width: 2.4rem !important;
+    border-radius: 0.4rem;
+    padding: 0.48rem 0.46rem;
+    font-size: 1.4rem;
+    color: var(--color-drkprpl);
+    background-color: var(--color-lgtprpl);
+}
+
+.medname {
+    margin-left: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.medqty {
+    opacity: 50%;
+    font-size: 0.8rem;
+    margin-top: -1.2rem;
+    margin-left: 2.6rem;
+}
+
+.medpurdate {
+    margin-left: 24.8em;
+    margin-top: -3.43rem;
+    font-size: 0.8rem;
+}
+
+.medcard {
+    height: 1.2rem;
+    width: 4.4rem;
+    padding: 0.1rem;
+    font-size: 0.72rem;
+    margin-left: 20.6rem;
+    margin-top: -2.3rem;
+    border-radius: 0.2rem;
+    color: var(--color-white);
+}
+
+.medcardmob { width: 5.2rem; margin-left: 19.8rem; }
+/* Sub-Main Section Ends Here */
+
+/* Footer Section Starts Here */
+.medfootergrp {
+    display: block;
+    position: relative;
+    padding: 1.2rem;
+    margin-top: 30rem;
+    font-family: var(--font-roboto);
+    box-shadow: -0.001rem -0.001rem 0.2rem 0.4rem var(--color-whtsmk);
+}
+
+.txtMsg { font-size: 1.6rem; margin-top: 0.4rem; }
+/*  */
+/* Custom Scrollbar */
+::-webkit-scrollbar, .bcasubgrp::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 0.8rem;
+}
+
+.bcasubgrp::-webkit-scrollbar-track { margin-left: 0.04rem !important; }
+
+::-webkit-scrollbar-track, .bcasubgrp::-webkit-scrollbar-track {
+    border: 0.25em solid var(--color-org);
+    background-color: var(--color-org);
+    border-radius: 0.8rem;
+    margin: 0.5em;
+    opacity: 50%;
+}
+
+::-webkit-scrollbar-thumb, .bcasubgrp::-webkit-scrollbar-thumb {
+    background-color: var(--color-dgrblue);
+    border-radius: 0.8rem;
+}
+/* Custom Scrollbar */
+
+/* Custom Animations */
+@keyframes rscolbaranim {
+    50% { width: 10rem; border-color: purple; background-color: purple; }
+    100% { width: 8rem; border-color: dodgerblue; background-color: dodgerblue; }
+}
+
+@keyframes vcolbaranim {
+    50% { width: 8.5rem; border-color: purple; background-color: purple; }
+    100% { width: 6rem; border-color: dodgerblue; background-color: dodgerblue; }
+}
+/* Custom Animations */
