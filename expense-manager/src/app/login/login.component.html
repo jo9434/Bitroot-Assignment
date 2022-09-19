@@ -1,0 +1,18 @@
+<!-- <p>login works!</p> -->
+<div>
+    <form class="loginform bg-warning">
+        <h2 style="text-transform: capitalize;">expense manager</h2>
+        <br>
+        <input type="text" class="txtuname" name="username" id="username" placeholder="Enter Username..." />
+        <br><br>
+        <input type="password" class="txtpwd" name="password" id="password" placeholder="Enter Password..." />
+        <br><br>
+        <button type="submit" id="btnLogin" class="btnLogin btn btn-danger" (click)='logincheck("username","password")'>login</button>
+    </form>
+    <button class="viewHint btn btn-primary" (click)="showHints()">view hint</button>
+    <h2 class="hints hideHints">Usernames: {{usernameshint}}</h2>
+    <h2 class="hints hideHints">Passwords: {{passwordshint}}</h2>
+    <footer>
+        <h2>creator: joel allan william</h2>
+    </footer>
+</div>

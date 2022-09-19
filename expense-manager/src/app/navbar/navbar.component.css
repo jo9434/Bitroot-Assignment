@@ -1,0 +1,82 @@
+/* Navigation Menu Starts Here */
+.navbar {
+    height: 2.8rem;
+    width: 79.98rem;
+    padding: 0.2rem;
+    position: fixed;
+    margin-top: -5.78rem;
+    z-index: 20 !important;
+}
+
+.appname {
+    text-transform: capitalize;
+    margin-top: 0.2rem;
+    margin-left: 2rem;
+    font-size: 4.4vh;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+.appname:hover { font-style: italic; margin-right: 2vh; }
+
+.appname:hover::after { transition: 0.6s ease-out; }
+
+.navlinks { list-style-type: none; }
+
+.navlinks a {
+    display: inline-flex;
+    position: relative;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 3.4vh;
+    cursor: pointer;
+}
+
+.navlinks a:hover { color: var(--color-orange); }
+
+.navlinks a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-orange);
+    transform-origin: center;
+    transition: transform 0.86s ease-in-out;
+}
+
+.navlinks a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+a.active { color: var(--color-black); }
+
+#navHome, #navAbout, #navService, #navCareer, #navBlog, #navContact { float: left; }
+
+#navHome { margin-left: 20rem; }
+
+#navAbout { margin-left: -6rem; }
+
+#navService { margin-left: -6rem; }
+
+#navCareer { margin-left: -6rem; }
+
+#navBlog { margin-left: -6rem; } 
+
+#navContact { margin-left: -6rem; margin-right: 10rem; }
+
+.btnSignup {
+    text-transform: capitalize;
+    height: 1.8rem;
+    width: 6rem;
+    text-align: center;
+    padding: 0 0.2rem 0.04rem 0;
+    margin-top: -0.2rem;
+    margin-left: -16rem;
+    margin-right: 0.8rem;
+}
+/* Navigation Menu Ends Here */

@@ -1,0 +1,175 @@
+/* Navigation Menu Starts Here */
+* {
+    box-sizing: border-box;
+}
+
+.dbnavbar {
+    height: 2.8rem;
+    width: 79.98rem;
+    padding: 0.2rem;
+    position: fixed;
+    z-index: 20 !important;
+}
+
+.dbappname {
+    text-transform: capitalize;
+    margin-top: 0.2rem;
+    margin-left: 2rem;
+    font-size: 4.4vh;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+.dbappname:hover { font-style: italic; margin-right: 2vh; }
+
+.dbappname:hover::after { transition: 0.6s ease-out; }
+
+.dbnavlinks { list-style-type: none; margin-top: -2.2rem; }
+
+.dbnavlinks a {
+    display: inline-flex;
+    position: relative;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 3.4vh;
+    cursor: pointer;
+    margin-top: -6rem !important;
+}
+
+.dbnavlinks a:hover { color: var(--color-orange); }
+
+.dbnavlinks a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-orange);
+    transform-origin: center;
+    transition: transform 0.86s ease-in-out;
+}
+
+.dbnavlinks a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+a.dbactive { color: var(--color-black); }
+
+#dbnavHome, #dbnavAbout, #dbnavService, #dbnavCareer, #dbnavBlog, #dbnavContact { float: left; }
+
+#dbnavHome { margin-left: 32rem; }
+
+#dbnavAbout { margin-left: 38rem; }
+
+#dbnavService { margin-left: 44rem; }
+
+#dbnavCareer { margin-left: 51.4rem; }
+
+#dbnavBlog { margin-left: 58.5rem; } 
+
+#dbnavContact { margin-left: 63.6rem; margin-right: 10rem; }
+
+.btnLogout {
+    text-transform: capitalize;
+    height: 1.8rem;
+    width: 6rem;
+    text-align: center;
+    padding: 0 0.2rem 0.04rem 0;
+    margin-top: -4.9rem;
+    margin-left: 69.2rem;
+    margin-right: 0.8rem;
+}
+
+.btnLogout a { color: var(--color-black); text-decoration: none; }
+/* Navigation Menu Ends Here */
+
+/* Dashboard Section Starts Here */
+.dashboard { padding: 4rem 1.2rem; }
+
+.loggeduser, .appheading { text-transform: capitalize; }
+
+.dbgroup { padding: 0 0.6rem; }
+
+.txtbar { height: 2.36rem; padding-left: 0.4rem; }
+
+.dashboard { padding: 4rem 1.2rem; }
+
+.loggeduser, .appheading { text-transform: capitalize; }
+
+.exptracker { display: flex; margin-top: 3.5rem; justify-content: space-between; }
+
+.etlist { width: 100%; box-shadow: -0.001rem -0.001rem 0.2rem 0.2rem var(--color-lgtgray); }
+
+.etlist, .appheader { border-top-left-radius: 0.68rem; border-top-right-radius: 0.68rem; }
+
+.appheader { display: flex; justify-content: center; align-items: center; }
+
+.appheader h2 {
+    font-size: 2rem;
+    font-weight: 450;
+    letter-spacing: 0.5rem;
+    text-transform: capitalize;
+}
+
+.tablegroup { display: flex; padding: 0 0.2rem; text-align: center !important; justify-content: space-between; }
+
+.tableIncomes { margin-right: 0.22rem; }
+
+input {
+    padding: 0 0.6rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: transparent;
+    border: 0.1rem solid var(--color-orange);
+    transition: all 0.8s ease-in-out;
+}
+
+.inc_date, .exp_date { width: 4rem; }
+
+.inc_amount, .inc_category, .exp_amount, .exp_category { width: 6.5rem; }
+
+input:focus { outline: none; border-color: var(--color-orange); }
+
+.inc_amount:focus, .exp_amount:focus { width: 7.5rem; }
+
+.inc_category:focus, .exp_category:focus { width: 7.8rem; } 
+
+.btndwld {
+    display: flex;
+    position: absolute;
+    padding: 0.2rem 0.4rem;
+    transition: all 0.48s ease-in-out;
+    border: 0.2rem solid var(--color-blue);
+}
+
+#exceldwld { border-right: 0; margin-left: 65rem; border-top-left-radius: 2.8rem; border-bottom-left-radius: 2.8rem; }
+
+#pdfdwld { border-left: 0; margin-left: 68.36rem; border-top-right-radius: 2.8rem; border-bottom-right-radius: 2.8rem; }
+
+.text {
+    width: 6rem;
+    margin-top: -2.8rem;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border: 0.1rem solid var(--color-orange);
+}
+
+#exceltext {
+    padding-right: 0;
+    padding-left: 0.6rem;
+    margin-left: -4.87rem;
+    border-top-left-radius: 28rem;
+    border-bottom-left-radius: 28rem;
+}
+
+#pdftext {
+    padding-left: 0;
+    padding-right: 0.6rem;
+    margin-left: -0.31rem;
+    border-top-right-radius: 28rem;
+    border-bottom-right-radius: 28rem;
+}

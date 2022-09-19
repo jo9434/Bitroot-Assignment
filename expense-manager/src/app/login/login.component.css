@@ -1,0 +1,64 @@
+.loginform {
+    padding: 1.2rem;
+    position: relative;
+    z-index: 2;
+    margin-top: 5.8rem;
+    margin-left: 30.8rem;
+    margin-right: 2rem;
+    border: 0.2rem solid var(--color-orange);
+    border-radius: 0.8rem;
+    background-color: var(--color-orange);
+    text-align: center;
+    color: var(--color-white);
+    height: 16rem;
+    width: 26rem;
+}
+
+.txtuname, .txtpwd {
+    width: 20rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: var(--color-lgtgray);
+    padding: 0 0.26rem;
+    transition: all 0.4s ease-in-out;
+}
+
+input:focus { outline: none; border: 0.2rem solid var(--color-dgrblue); }
+
+.btnLogin { text-transform: capitalize; width: 10rem; }
+
+.viewHint { position: relative; margin-left: 40.8rem; margin-top: 0.4rem; text-transform: capitalize; }
+
+.hints { font-size: 0.88rem; text-align: center; margin-top: 0.8rem; margin-left: 8rem; }
+
+.showHints { display: block; }
+
+.hideHints { display: none; }
+
+footer { margin-top: 6.2rem; }
+
+footer h2 {
+    cursor: pointer;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: max-content;
+    border-radius: 2rem;
+    margin-left: 36rem;
+    text-transform: capitalize;
+    transition: all 0.4s ease-in-out;
+}
+
+footer h2:hover { border: 0.1rem solid var(--color-orange); animation: textanim 2s infinite ease-in-out; }
+
+footer h2:active { border: 0.1rem solid var(--color-orange); animation: textclickanim 2s ease-in-out; }
+
+@keyframes textanim {
+    50% { margin-top: -1.2rem; }
+    100% { margin-top: 0; }
+}
+
+@keyframes textclickanim {
+    from { transform: rotate(360deg); }
+    to { opacity: 1; }
+}

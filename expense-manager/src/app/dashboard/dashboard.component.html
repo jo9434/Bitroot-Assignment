@@ -1,0 +1,97 @@
+<!-- <p>dashboard works!</p> -->
+<section>
+    <section>
+        <nav id="dbnavbar" class="dbnavbar bg-danger text-light">
+            <h2 class="dbappname">Expense Manager</h2>
+            <li id="dbnavHome" class="dbnavlinks"><a class="dbactive" href="#">home</a></li>
+            <li id="dbnavAbout" class="dbnavlinks"><a href="#">about</a></li>
+            <li id="dbnavService" class="dbnavlinks"><a href="#">services</a></li>
+            <li id="dbnavCareer" class="dbnavlinks"><a href="#">careers</a></li>
+            <li id="dbnavBlog" class="dbnavlinks"><a href="#">blog</a></li>
+            <li id="dbnavContact" class="dbnavlinks"><a href="#">contact</a></li>
+            <button class="btnLogout btn btn-warning"><a [href]="pathLogin">logout</a></button>
+        </nav>
+    </section>
+
+    <section>
+        <div class="dashboard">
+            <h1 class="loggeduser" style="font-size: 1.8rem; margin-left: 0.4rem;">welcome, {{users[0]}}</h1>
+            <hr class="bg-warning" style="opacity: 1; height: 0.28rem; border-radius: 2rem;">
+            
+            <div class="dbgroup">
+                <h1 class="appheading" style="font-size: 1.2rem; text-align: center;">expense manager</h1>
+                <hr class="bg-warning" style="opacity: 1; height: 0.28rem; width: 10.8rem; border-radius: 2rem; margin-left: 32.8rem; margin-top: -0.48rem;">
+                
+                <div class="exptracker">
+                    <div class="etlist">
+                        <div class="appheader bg-warning">
+                            <h2>dashboard</h2>
+                            <button id="exceldwld" class="btndwld btn btn-outline-primary" (mouseenter)="displayExcelText()" (mouseleave)="hideExcelText()">
+                                <i class="icondownload fa-solid fa-file-excel"></i>
+                                <span id="exceltext" class="text" style="display: none; position: absolute;">Excel (.csv)</span>
+                            </button>
+                            <button id="pdfdwld" class="btndwld btn btn-outline-primary" (mouseenter)="displayPdfText()" (mouseleave)="hidePdfText()">
+                                <i class="icondownload fa-solid fa-file-pdf"></i>
+                                <span id="pdftext" class="text" style="display: none; position: absolute;">PDF (.pdf)</span>
+                            </button>
+                        </div>
+                        <div class="tablegroup bg-warning">
+                            <table id="tableIncomes" class="tableIncomes table table-success table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Incomes</th>
+                                        <th>Date</th>
+                                        <th>Amount (Cr.)</th>
+                                        <th>Category</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <button id="addincome" class="addincome btn btn-primary" style="margin-top: 0.12rem; border-radius: 2rem; padding: 0 0.28rem;" (click)="addIncomeData()"><i class="iconaddincm fa-solid fa-plus"></i></button>
+                                        </td>
+                                        <td>
+                                            <input class="inc_date" type="text" name="inc_date" id="inc_date" placeholder="Date" />
+                                        </td>
+                                        <td>
+                                            <input class="inc_amount" type="text" name="inc_amount" id="inc_amount" placeholder="Amount" />
+                                        </td>
+                                        <td>
+                                            <input class="inc_category" type="text" name="inc_category" id="inc_category" placeholder="Category" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table id="tableExpenses" class="tableExpenses table table-danger table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Expenses</th>
+                                        <th>Date</th>
+                                        <th>Amount (Dr.)</th>
+                                        <th>Category</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <button id="addexpense" class="addexpense btn btn-primary" style="margin-top: 0.12rem; border-radius: 2rem; padding: 0 0.28rem;" (click)="addExpenseData()"><i class="iconaddexp fa-solid fa-plus"></i></button>
+                                        </td>
+                                        <td>
+                                            <input class="exp_date" type="text" name="exp_date" id="exp_date" placeholder="Date" />
+                                        </td>
+                                        <td>
+                                            <input class="exp_amount" type="text" name="exp_amount" id="exp_amount" placeholder="Amount" />
+                                        </td>
+                                        <td>
+                                            <input class="exp_category" type="text" name="exp_category" id="exp_category" placeholder="Category" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

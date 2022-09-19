@@ -1,0 +1,14 @@
+<!-- <p>navbar works!</p> -->
+<section>
+    <nav id="navbar" class="navbar bg-danger text-light">
+        <h2 class="appname">Expense Manager</h2>
+    <li id="navHome" class="navlinks"><a class="active" [href]="pathLogin">home</a></li>
+        <li id="navAbout" class="navlinks"><a href="#">about</a></li>
+        <li id="navService" class="navlinks"><a href="#">services</a></li>
+        <li id="navCareer" class="navlinks"><a href="#">careers</a></li>
+        <li id="navBlog" class="navlinks"><a href="#">blog</a></li>
+        <li id="navContact" class="navlinks"><a href="#">contact</a></li>
+        <button class="btnSignup btn btn-warning" data-bs-toggle="modal" data-bs-target="#regform">sign up</button>
+    </nav>
+    <app-register></app-register>
+</section>
